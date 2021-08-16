@@ -33,10 +33,37 @@ export default class CampayaApp extends ApplicationElement implements ICampayaAp
         this.addElement(this.desktopView);
     }
 
-    private mobileView: MobileView = new MobileView();
-    private tabletView: TabletView = new TabletView();
-    private laptopView: LaptopView = new LaptopView();
-    private desktopView: DesktopView = new DesktopView();
+    private _mobileView!: MobileView;
+    private get mobileView(): MobileView {
+        if (!this._mobileView) {
+            this._mobileView = new MobileView();
+        }
+        return this._mobileView;
+    }
+
+    private _tabletView!: TabletView;
+    private get tabletView(): TabletView {
+        if (!this._tabletView) {
+            this._tabletView = new TabletView();
+        }
+        return this._tabletView;
+    }
+
+    private _laptopView!: LaptopView;
+    private get laptopView(): LaptopView {
+        if (!this._laptopView) {
+            this._laptopView = new LaptopView();
+        }
+        return this._laptopView;
+    }
+
+    private _desktopView!: DesktopView;
+    private get desktopView(): DesktopView {
+        if (!this._desktopView) {
+            this._desktopView = new DesktopView();
+        }
+        return this._desktopView;
+    }
 
     private responsiveLayoutMachine: ResponsiveLayoutMachine = new ResponsiveLayoutMachine(this);
 }
