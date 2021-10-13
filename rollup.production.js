@@ -30,7 +30,7 @@ export default {
         strip({ include: '**/*.ts' }),
         filesize({ showBrotliSize: true })
     ],
-    output: [ getOutput(2019), getOutput(2018), getOutput(2017), getOutput(2016), getOutput(2015) ]
+    output: [ getOutput(2019) ] // , getOutput(2018), getOutput(2017), getOutput(2016), getOutput(2015) ]
 };
 
 function getOutput(year) {

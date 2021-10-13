@@ -1,4 +1,4 @@
-import { ChildElement, DisplayContainer, DisplayElement, IColor, IDisplayContainer, IPathElement, Layout, PathElement } from 'enta';
+import { ChildElement, DisplayContainer, DisplayElement, IColor, IDisplayContainer, Layout } from 'enta';
 import PaperSurface from './PaperSurface';
 
 export default class PaperContainer extends DisplayElement implements IDisplayContainer {

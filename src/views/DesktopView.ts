@@ -10,7 +10,7 @@ export default class DesktopView extends ScrollContainer {
         super();
         this.name = 'DesktoptView';
         this.width = 1366;
-        this.centerOffset = 0;
+        this.alignHorizontal = 'center';
         this.percentHeight = 100;
         this.paddingX = 24;
         this.paddingY = 48;

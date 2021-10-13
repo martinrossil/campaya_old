@@ -18,8 +18,7 @@ export default class PrimaryButton extends DisplayContainer {
     private get labelElement(): ILabelElement {
         if (!this._labelElement) {
             this._labelElement = new CampayaLabel(22, 500, Colors.BUTTON_TEXT_COLOR, 'Opret dig gratis');
-            this._labelElement.centerOffset = 0;
-            this._labelElement.middleOffset = 0;
+            this._labelElement.align = 'centerMiddle';
         }
         return this._labelElement;
     }
